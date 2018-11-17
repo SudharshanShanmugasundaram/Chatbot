@@ -1,6 +1,9 @@
 # Chatbot
-Chatbot implementation using Cornell Movie Dialog Dataset in PyTorch.The bot can converse with the user and can answer the questions asked 
-though it doesn't pass the [Turing Test](https://en.wikipedia.org/wiki/Turing_test).
+Chatbot implementation using Cornell Movie Dialogs Dataset in PyTorch.The bot can converse with the user and can answer the questions asked though it doesn't pass the [Turing Test](https://en.wikipedia.org/wiki/Turing_test).
+
+It is bulit using Sequence to Sequence architecture with Attention Mechanism.
+
+Sequence To Sequence model introduced in Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation has since then, become the Go-To model for Dialogue Systems and Machine Translation. It consists of two RNNs (Recurrent Neural Network) : An Encoder and a Decoder. The encoder takes a sequence(sentence) as input and processes one symbol(word) at each timestep. Its objective is to convert a sequence of symbols into a fixed size feature vector that encodes only the important information in the sequence while losing the unnecessary information.Each hidden state influences the next hidden state and the final hidden state can be seen as the summary of the sequence. This state is called the context or thought vector, as it represents the intention of the sequence. From the context, the decoder generates another sequence, one symbol(word) at a time.
 
 # What is a chatbot ???
 
@@ -17,6 +20,7 @@ messaging apps such as Facebook Messenger or WeChat, or via individual organizat
 usage categories such as conversational commerce (e-commerce via chat), analytics, communication, customer support, design, 
 developer tools, education, entertainment, finance, food, games, health, HR, marketing, news, personal, productivity, shopping, social, 
 sports, travel and utilities.
+
 
 # Dataset
 
@@ -48,8 +52,11 @@ This corpus contains a large metadata-rich collection of fictional conversations
 
 * see README.txt (included) for details
 
+The dataset can be downloaded here : [Cornell Movie Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
 # Requirements
 
 1. PyTorch
 2. Python
 3. CUDA (if you want to train on a GPU)
+
+*The overall implementation is inspired by [this](https://pytorch.org/tutorials/beginner/chatbot_tutorial.html) post on [pytorch.org](https://pytorch.org/)*
