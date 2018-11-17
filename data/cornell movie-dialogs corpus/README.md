@@ -49,7 +49,7 @@ In all files the field separator is " +++$+++ "
 		- movie year, 
 	   	- IMDB rating,
 		- no. IMDB votes,
- 		- genres in the format ['genre1','genre2',É,'genreN']
+ 		- genres in the format ['genre1','genre2',Ã‰,'genreN']
 
 - movie_characters_metadata.txt
 	- contains information about each movie character
@@ -77,7 +77,7 @@ In all files the field separator is " +++$+++ "
 		- characterID of the second character involved in the conversation
 		- movieID of the movie in which the conversation occurred
 		- list of the utterances that make the conversation, in chronological 
-			order: ['lineID1','lineID2',É,'lineIDN']
+			order: ['lineID1','lineID2',Ã‰,'lineIDN']
 			has to be matched with movie_lines.txt to reconstruct the actual content
 
 - raw_script_urls.txt
